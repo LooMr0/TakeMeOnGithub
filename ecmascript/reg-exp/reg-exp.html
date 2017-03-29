@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+</head>
+<body>
+<script>
+    //邮箱匹配
+    var emailReg=/^[A-Za-z1-9]{1,10}[@]\w{1,10}[\.](com)$/;
+
+    //座机匹配
+    var phoneNumber=new RegExp(/^0\d{2,3}[-]\d{8}$/);
+    var cdPhone="028-83787754";
+    var f1=phoneNumber.test(cdPhone);
+    console.log("成都座机号匹配结果："+f1);
+
+    var ncphone="0817-1234567";
+    f1=phoneNumber.test(ncphone);
+    console.log("南充座机号匹配结果："+f1);
+//QQ匹配
+    var txNumber=new RegExp(/^[1-9]\d{3,10}$/);
+    var tcNumber="3000434312";
+    var f2=txNumber.test(tcNumber);
+    console.log("该QQ匹配结果："+f2);
+
+
+// /^1[34578]\d{9}$/.test(num);
+    var reg=new RegExp("ell");
+    var sources="hello world";
+    var flag=reg.test(sources);
+    console.log(flag);
+//取出字符串中匹配该规则的字符串片段
+    var result=reg.exec(sources);
+    console.log(typeof result);
+    console.log(result);
+
+    reg=new RegExp("o","g");
+    result=sources .match(reg);
+    console.log(result);
+
+    //大小写匹配
+    reg=new RegExp("o","ig");
+    result="helloO world".match(reg);
+    console.log(result);
+
+</script>
+</body>
+</html>
