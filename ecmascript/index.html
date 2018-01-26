@@ -8,6 +8,7 @@
     <script src="function.js"></script>
     <script src="event.js"></script>
     <script src="if-for.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <style>
         body {
             background: #ffebd0;
@@ -1034,7 +1035,11 @@
         </section>
         <div class="line"></div>
     </section>
-  
- 
+     <div class="click" style="width: 100px;height: 100px;border: 1px red solid;">123</div>
 </body>
+    <script>
+    $('.click').click(function () {
+        alert(123)
+    })
+</script>
 </html>
