@@ -35,3 +35,6 @@ var oStr=String(
     "I,m  object of String"
 );
 var num2=Number(123);
+ $('.click').click(function () {
+        $(this).toggle();
+    })
