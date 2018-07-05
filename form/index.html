@@ -1,103 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>生日快乐！！！</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303B4F">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-title" content="took-web">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="msapplication-TileColor" content="#303B4F"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- SEO优化 -->
+    <title>藏叔农场，藜麦食谱</title>
+    <meta name="description" content="123">
+    <meta name="robots" content="index,follow">
+    <style>
+        .head{
+            color: #2fc257;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .content{
+            color: #888;
+            font-size: 15px;
+            text-indent: 30px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
+
 <body>
-<form id="formContainer" style="width:600px;">
-    <fieldset>
-        <legend>注册信息</legend>
-        <div class="field-name">
-        <label for="userName">用户名：</label></div>
+<div id="app" v-cloak>
+    <div class="head">藜麦营养价值</div>
+    <div class="content">藜麦是全谷全营养完全蛋白碱性食物，胚乳占种子的68%, 且具有营养活性，蛋白质含量高达16%-22%,品质与奶粉及肉类相当；富含多种氨基酸，其中有人体所需的全部9种必需氨基酸，尤其富含植物中缺乏的赖氨酸；钙、镁、磷、钾、 铁、锌、硒、锰、铜等矿物质含量高；富含不饱和脂肪酸、类黄酮、B族维生素和维生素E、胆碱、甜菜碱、叶酸、α-亚麻酸、β-葡聚糖等多种有益化合物；膳食纤维素含量高达7.1%,胆固醇为0,不含麸质，低脂低热量低升糖，各项营养几乎都是常见食物里最优秀的。</div>
+   <div class="img"><img src="/image/myImg.png" alt=""></div>
+    <div class="head">食用功效</div>
+    <div class="content">藜麦属易熟易消化食物，口感独特，有淡淡的坚果香，具有均衡补充营养、增强机体功能、调节免疫和内分泌、提高机体应激能力、预防疾病、抗癌、减肥、辅助治疗等功效。适于所有群体食用，尤其适于三高、心脏病等慢性病，以及婴幼儿、孕妈、儿童、学生、老年人等特殊体质和生活不规律人群，长期食用，效果显著。藜麦符合人类对食品安全、健康、营养、天然的需求，已经成为国际上炙手可热的时尚健康食品。</div>
+</div>
 
-        <input required maxlength="9"  type="text" id="userName"><br/>
-        <div class="field-name">
-            <label for="password">密码：</label></div>
-        <input required minlength="4" maxlength="15"   name="password" type="password" id="password"><br/>
-        <div class="field-name">
-            <label for="confirmPwd">确认密码：</label></div>
-        <input required minlength="4" maxlength="15" type="password" id="confirmPwd"><br/>
-        <div class="field-name">
-            <label for="email">邮箱：</label></div>
-        <input  type="email" id="email"><br/>
-        <div class="field-name">
-            <label for="mobinumber">电话号码：</label></div>
-        <input  name="phoneNumber" type="tel" id="mobinumber"><br/>
-        <div class="field-name"><label for="icon">头像</label>
-           </div>
-        <div class="icon-container"> <img src="image/123_r2_c2.png" alt="头像">
-            <input type="file" name="icon">
-        </div>
-
-    </fieldset>
-    <fieldset>
-        <legend>用户基本信息</legend>
-        <div class="field-name">
-            <label for="name">密码：</label></div>
-        <input type="text" id="name"><br/>
-        <div class="field-name">
-            <label >性别：</label></div>
-        <label for="genderMan">男</label>
-        <input name="gender" type="radio" id="genderMan">
-        <label for="genderWoman">女</label>
-        <input name="gender" type="radio" id="genderWoman"><br/>
-        <div class="field-name">
-            <label for="age">年龄：</label></div>
-        <input type="number" id="age"><br/>
-        <div class="field-name"><label>地址：</label></div>
-            <label for="province">省</label>
-        <select name="province" id="province">
-            <option value="">--请选择--</option>
-            <option value="四川">四川</option>
-            <option value="重庆">重庆</option>
-            <option value="云南">云南</option>
-            <option value="四川">四川</option>
-            <option value="四川">四川</option>
-        </select>
-
-        <label for="city">市</label>
-        <select name="city" id="city">
-            <option value="">--请选择--</option>
-            <option value="成都">成都</option>
-            <option value="温江">温江</option>
-            <option value="绵阳">绵阳</option>
-            <option value="广安">广安</option>
-            <option value="宜宾">宜宾帝国</option>
-        </select>
-
-        <label for="town">区</label>
-        <select name="town" id="town">
-            <option value="">--请选择--</option>
-            <option value="青羊区">青羊区</option>
-            <option value="郫县">郫县</option>
-            <option value="成华区">成华区</option>
-            <option value="温江">温江</option>
-            <option value="武侯区">武侯区</option>
-        </select><br/>
-        <div class="field-name">
-            <label for="dateilsAddr">详细地址：</label></div>
-        <input type="text" id="dateilsAddr" name="dateilsAddr"><br/>
-        <div class="field-name">
-            <label>兴趣/爱好：</label></div>
-        <label for="basketball">篮球</label>
-        <input name="favourite"
-               type="checkbox" id="basketball">
-
-        <label for="football">足球</label>
-        <input name="favourite"
-               type="checkbox" id="football">
-
-        <label for="swimming">游泳</label>
-        <input name="favourite"
-               type="checkbox" id="swimming">
-<br/>
-        <div class="field-name"></div>
-        <input name="getup" type="submit" value="提交">
-        <input type="button" value="清空">
-    </fieldset>
-</form>
-<script src="form.js"></script>
 </body>
+
 </html>
