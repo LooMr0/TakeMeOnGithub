@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303B4F">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-title" content="took-web">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="msapplication-TileColor" content="#303B4F"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- SEO优化 -->
+    <title>藏叔农场</title>
+    <meta name="description" content="123">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .head{
+            width: 30%;
+            background-color: rgba(245,245,245,1);
+            border-left: 1px #ccc solid;
+            border-right: 1px #ccc solid;
+            text-align: center;
+        }
+        .trHead{
+            border: 1px #ccc solid;
+        }
+        .headWord{
+            text-align: center;
+            color: rgba(60,143,230,1);
+            font-size: 30px;
+            padding: 20px 0;
+        }
+        .imgLogo>img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <div class="imgLogo"><img src="lijinqi.png" alt=""></div>
+    <div class="headWord">产品追溯源</div>
+    <table class="table">
+        <tbody>
+        <tr class="trHead">
+            <td class="head">产品名称</td>
+            <td>藏叔农场藜麦臻品套盒 </td>
+        </tr>
+        <tr class="trHead">
+            <td class="head">生产基地</td>
+            <td>青海省海西州德令哈市柯鲁柯镇二大队</td>
+        </tr>
+        <tr class="trHead">
+            <td class="head">加工基地</td>
+            <td>青海省海西海藜农业科技有限公司</td>
+        </tr>
+        <tr class="trHead">
+            <td class="head">加工设备</td>
+            <td>进口设备</td>
+        </tr>
+        <tr class="trHead">
+            <td class="head">加工时间</td>
+            <td>2018年</td>
+        </tr>
+         <tr class="trHead">
+            <td class="head">执行标准</td>
+            <td>LS/T 3245-2015</td>
+        </tr>
+        <tr class="trHead">
+            <td class="head">生产许可</td>
+            <td>SC10163280201118</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+</body>
+
+</html>
