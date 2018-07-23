@@ -45,15 +45,13 @@
         }
         .headWord{
             text-align: center;
-            color: rgba(60,143,230,1);
-            font-size: 26px;
-            padding: 10px 0 20px 0;
+            font-size: 16px;
+            padding: 5px 0 0;
         }
         .imgLogo{
             width:100%;
             margin:0 auto;
             text-align: center;
-            border-bottom: 1px #ccc solid;
         }
         .imgLogo>img{
             width: 50%;
@@ -62,25 +60,67 @@
             width:96%;
             margin:0 3%;
         }
-        .trHead>td:nth:nth-child(2){
-            font-size: 20px;
+        .trHead>td{
+            font-size: 10px;
+        }
+        .other{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 10px;
+            color: #1AAD19;
+            line-height: 0.8;
+        }
+        .wordTip>span{
+            display: inline-block;
+            font-size: 10px;
+        }
+        .lineHead{
+            color: #1AAD19;
+            margin-top: 20px;
+        }
+        .imgHead{
+            color: #1AAD19;
+            font-size: 15px;
+            margin-top: 25px;
+            text-align: center;
+        }
+        .imgList{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100vw;
+        }
+        .imgBox{
+            width: 47%;
+            height: 47vw;
+            margin: 10px 0;
         }
     </style>
 </head>
 
 <body>
 <div id="app" v-cloak>
-    <div class="imgLogo"><img src="lijinqi.png" alt=""></div>
+    <div class="imgLogo"><img src="11.png" alt=""></div>
     <div class="headWord">产品追溯源</div>
     <table class="table">
         <tbody>
         <tr class="trHead">
             <td class="head">产品名称</td>
-            <td>藏叔农场藜麦臻品套盒 </td>
+            <td>藏叔农场•藜麦米</td>
         </tr>
         <tr class="trHead">
-            <td class="head">生产基地</td>
-            <td>青海省海西州德令哈市柯鲁柯镇二大队</td>
+            <td class="head">种植时间</td>
+            <td>2017年4月20日-10月22日</td>
+        </tr>
+        <tr class="trHead">
+            <td class="head">种植基地</td>
+            <td>藏叔农场德令哈基地<br/>
+                （青海省海西州德令哈市柯鲁柯镇二大队）</td>
+        </tr>
+        <tr class="trHead">
+            <td class="head">藜麦品种</td>
+            <td>从美国引进并选育改良后的优良品种：<br/>
+                柴达木1号</td>
         </tr>
         <tr class="trHead">
             <td class="head">加工基地</td>
@@ -92,9 +132,9 @@
         </tr>
         <tr class="trHead">
             <td class="head">加工时间</td>
-            <td>2018年</td>
+            <td>2018年5月</td>
         </tr>
-         <tr class="trHead">
+        <tr class="trHead">
             <td class="head">执行标准</td>
             <td>LS/T 3245-2015</td>
         </tr>
@@ -102,9 +142,49 @@
             <td class="head">生产许可</td>
             <td>SC10163280201118</td>
         </tr>
+        <tr class="trHead">
+            <td class="head">加工优势</td>
+            <td>藏叔农场藜麦采用先进的进口设备进行湿法加工全脱苷，在去除口感苦涩且含有微毒的皂苷壳体的同时，保留了藜麦丰富的营养成分。</td>
+        </tr>
 
         </tbody>
     </table>
+    <div class="other">
+        <p>唯一单体植物全营养   低脂 低糖 低热量    零胆固醇</p>
+        <p>富含十八种氨基酸   助孕  提高孕酮    素食之王   宇航食品</p>
+        <p>未来食品   亚健康首选主食   非谷物蛋白 无麸质 不过敏</p>
+        <p>世界十大健康食品之一   米面主食替代品</p>
+    </div>
+    <div class="lineHead">藜麦科普</div>
+    <div class="wordTip">
+        <span style="text-indent: 24px;">藜麦，高原粮食作物，米面等主粮的替代品，被称为五谷之母，又称作“黄金米”、“粮食之母”。<br/></span>
+        <span style="text-indent: 24px;">藜麦有5000-7000多年的种植历史，主要生长在海拔3000米以上的高原，每年大约98%的藜麦供应欧美国家，作为全球网红食材，受到全世界人们的喜爱。<br/></span>
+        <span style="text-indent: 24px;">●1980年，被美国宇航局选为最佳宇航员食品。<br/></span>
+        <span style="text-indent: 24px;">●2008年，被列为全球十大健康食品之一。<br/></span>
+        <span style="text-indent: 24px;">●联合国认定为唯一的完美全营养食品，是唯一一种包含人类所需的所有基本营<br/></span>
+        <span style="text-indent: 24px;">养元素的食材。<br/></span>
+        <span style="text-indent: 24px;">●适宜所有群体食用，长期食用，效果显著，被业内公认为：<br/></span>
+        <span style="text-indent: 24px;">是孕产妇、婴幼儿优质营养源。<br/></span>
+        <span style="text-indent: 24px;">是老年人、术后康复患者补充营养的圣品。<br/></span>
+        <span style="text-indent: 24px;">是三高、心脏病等慢性病人群理想食物。<br/></span>
+        <span style="text-indent: 24px;">是素食者、塑型瘦身、麸质过敏人群的最佳主食选择<br/></span>
+    </div>
+    <div class="imgHead">藏叔农场·藜麦种植基地</div>
+    <div class="imgList">
+        <div class="imgBox"><img src="1.png" alt=""></div>
+        <div class="imgBox"><img src="2.png" alt=""></div>
+        <div class="imgBox"><img src="3.png" alt=""></div>
+        <div class="imgBox"><img src="4.png" alt=""></div>
+        <div class="imgBox"><img src="5.png" alt=""></div>
+        <div class="imgBox"><img src="6.png" alt=""></div>
+        <div class="imgBox"><img src="7.png" alt=""></div>
+        <div class="imgBox"><img src="8.png" alt=""></div>
+    </div>
+    <div class="imgHead">藏叔农场·藜麦加工基地</div>
+    <div class="imgList">
+        <div class="imgBox"><img src="9.png" alt=""></div>
+        <div class="imgBox"><img src="10.png" alt=""></div>
+    </div>
 </div>
 
 </body>
